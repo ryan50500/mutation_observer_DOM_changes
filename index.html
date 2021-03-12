@@ -10,7 +10,7 @@
     <div class="one">one</div>
     <div class="two">two</div>
     <div class="thre">three</div>
-    <div class="four">four</div>
+    <div class="four"></div>
     
 
     <script>
@@ -24,7 +24,8 @@
         // and what types of mutations trigger the callback
         observer.observe(document, {
         subtree: true,
-        attributes: true
+        attributes: true,
+        childList: true
         //...
         });
     </script>
